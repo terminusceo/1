@@ -336,7 +336,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply-3} / {CONFIG.MAX_SUPPLY}
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
             <s.TextDescription
               style={{
@@ -356,7 +356,7 @@ function App() {
 
             </span>
             <s.SpacerSmall />
-            {Number(data.totalSupply-3) >= CONFIG.MAX_SUPPLY ? (
+            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
